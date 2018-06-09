@@ -6,6 +6,26 @@
 <html class="no-js" lang="">
 <!--<![endif]-->
 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+</script>
+
 <head>
 <meta charset="utf-8">
 <meta name="description" content="">
@@ -51,6 +71,13 @@
 <!-- description text section -->
 <section id="inner-description" class="section inner-description">
   <div class="container">
+	<div>
+	<img class="mySlides" src="images/balance/sponsor_1.jpg">
+	<img class="mySlides" src="images/balance/sponsor_2.jpg">
+	<img class="mySlides" src="images/balance/loadout.jpg">
+	<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
     <div class="col-md-10 col-md-offset-1 space">
 	<p>Two mods I wrote in SQL and XML for the purpose of "balancing" the loadout and sponsor bonuses of Civ:BE. They have over 1300 subscribers combined on the Steam Workshop.</p>
 	<p>Links: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=378624154">Loadout Balance 10x
