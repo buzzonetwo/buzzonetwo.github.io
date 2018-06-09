@@ -37,7 +37,9 @@ function showDivs(n) {
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+
 
 <body>
 <!-- header section -->
@@ -71,14 +73,32 @@ function showDivs(n) {
 <!-- description text section -->
 <section id="inner-description" class="section inner-description">
   <div class="container">
-	<div class="mySlides">
-	<img src="images/balance/sponsor_1.jpg">
-	<img src="images/balance/sponsor_2.jpg">
-	<img src="images/balance/loadout.jpg">
-	<img src="images/balance/stats.jpg">
-	<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-	<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-	</div>
+	<div class="w3-content w3-display-container" style="max-width:900px;">
+
+  <!-- Slideshow -->
+  <div class="w3-display-container mySlides w3-animate-opacity" style="display: none;">
+    <img src="/images/balance/sponsor_1.jpg" style="width:100%">
+    <div class="w3-display-middle w3-text-white w3-container w3-padding-32 w3-hide-small">
+      <span class="w3-white w3-padding-large">Caption text</span>
+    </div>
+  </div>
+  <div class="w3-display-container mySlides w3-animate-opacity" style="display: none;">
+    <img src="/images/balance/sponsor_2.jpg" style="width:100%">
+    <div class="w3-display-topleft w3-text-white w3-container w3-padding-32 w3-hide-small">
+      <span class="w3-white w3-padding-large">Caption text</span>
+    </div>
+  </div>
+  <div class="w3-display-container mySlides w3-animate-opacity" style="display: block;">
+    <img src="/images/balance/loadout.jpg" style="width:100%">
+    <div class="w3-display-topright w3-text-white w3-container w3-padding-32 w3-hide-small">
+      <span class="w3-white w3-padding-large">Caption text</span>
+    </div>
+  </div>
+<button class="w3-button w3-light-grey noselection w3-display-left" onclick="plusDivs(-1)">❮</button>
+<button class="w3-button w3-light-grey noselection w3-display-right" onclick="plusDivs(+1)">❯</button>
+</div>
+
+
     <div class="col-md-10 col-md-offset-1 space">
 	<p>Two mods I wrote in SQL and XML for the purpose of "balancing" the loadout and sponsor bonuses of Civ:BE. They have over 1300 subscribers combined on the Steam Workshop.</p>
 	<p>Links: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=378624154">Loadout Balance 10x
