@@ -7,144 +7,154 @@
 <!--<![endif]-->
 
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+    var slideIndex = 1;
+    showDivs(slideIndex);
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
     }
-    x[slideIndex-1].style.display = "block"; 
-}
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        };
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
 </script>
 
 <head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Andrew Wan | Software Developer</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew Wan | Software Developer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 
 <body>
-<!-- header section -->
-<section class="innerbanner" role="banner">
-  <header id="header"> 
-    <!-- navigation section  -->
-    <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" alt="Mafolio"></a>
-      <nav class="navigation" role="navigation">
-        <ul class="primary-nav">
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="index.html">My Projects</a></li>
-		  <li><a href="resume.html">My Experience</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
-    <!-- navigation section  --> 
-  </header>
-  
-  <!-- banner text -->
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1">
-      <div class="innerbanner-text text-center">
-        <p>Civilization: Beyond Earth Balance mods</p>
-        <!-- banner text --> 
-      </div>
-    </div>
-  </div>
-</section>
-<!-- header section --> 
-<!-- description text section -->
-<section id="inner-description" class="section inner-description">
-  <div class="container">
-	<div class="w3-content w3-display-container" style="max-width:900px;">
+    <!-- header section -->
+    <section class="innerbanner" role="banner">
+        <header id="header">
+            <!-- navigation section  -->
+            <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" alt="Mafolio"></a>
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">My Projects</a></li>
+                        <li><a href="resume.html">My Experience</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+            <!-- navigation section  -->
+        </header>
 
-  <!-- Slideshow -->
-  <div class="w3-display-container mySlides w3-animate-opacity" style="display: none;">
-    <img src="images/balance/sponsor_1.jpg" style="width:100%">
-    <div class="w3-display-middle w3-text-white w3-container w3-padding-32 w3-hide-small">
-      <span class="w3-white w3-padding-large">Caption text</span>
-    </div>
-  </div>
-  <div class="w3-display-container mySlides w3-animate-opacity" style="display: none;">
-    <img src="images/balance/sponsor_2.jpg" style="width:100%">
-    <div class="w3-display-topleft w3-text-white w3-container w3-padding-32 w3-hide-small">
-      <span class="w3-white w3-padding-large">Caption text</span>
-    </div>
-  </div>
-  <div class="w3-display-container mySlides w3-animate-opacity" style="display: block;">
-    <img src="images/balance/loadout.jpg" style="width:100%">
-    <div class="w3-display-topright w3-text-white w3-container w3-padding-32 w3-hide-small">
-      <span class="w3-white w3-padding-large">Caption text</span>
-    </div>
-  </div>
-<button class="w3-button w3-light-grey noselection w3-display-left" onclick="plusDivs(-1)">❮</button>
-<button class="w3-button w3-light-grey noselection w3-display-right" onclick="plusDivs(+1)">❯</button>
-</div>
+        <!-- banner text -->
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="innerbanner-text text-center">
+                    <p>Civilization: Beyond Earth Balance mods</p>
+                    <!-- banner text -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- header section -->
+    <!-- description text section -->
+    <section id="inner-description" class="section inner-description">
+        <div class="container">
+            <div class="w3-content w3-display-container" style="max-width:900px;">
+
+                <!-- Slideshow -->
+                <div class="w3-display-container mySlides w3-animate-opacity" style="display: none; height: 400px">
+                    <img src="images/balance/sponsor_1.jpg" style="width:100%; border-radius: 0;">
+                </div>
+                <div class="w3-display-container mySlides w3-animate-opacity" style="display: none; height: 400px">
+                    <img src="images/balance/sponsor_2.jpg" style="width:100%; border-radius: 0;">
+                </div>
+                <div class="w3-display-container mySlides w3-animate-opacity" style="display: none; height: 400px">
+                    <img src="images/balance/loadout.jpg" style="width:100%; border-radius: 0;">
+                </div>
+                <div class="w3-display-container mySlides w3-animate-opacity" style="display: none; height: 400px">
+                    <img src="images/balance/stats.png" style="width:100%; border-radius: 0;">
+                </div>
+                <button class="w3-button w3-light-grey noselection w3-display-left" onclick="plusDivs(-1)">❮</button>
+                <button class="w3-button w3-light-grey noselection w3-display-right" onclick="plusDivs(+1)">❯</button>
+            </div>
 
 
-    <div class="col-md-10 col-md-offset-1 space">
-	<p>Two mods I wrote in SQL and XML for the purpose of "balancing" the loadout and sponsor bonuses of Civ:BE. They have over 1300 subscribers combined on the Steam Workshop.</p>
-	<p>Links: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=378624154">Loadout Balance 10x
+            <div class="col-md-10 col-md-offset-1 space">
+                <p>Two mods I wrote in SQL and XML for the purpose of "balancing" the loadout and sponsor bonuses of Civ:BE. They have over 1300 subscribers combined on the Steam Workshop.</p>
+                <p>Links: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=378624154">Loadout Balance 10x
 </a> and <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=371352378"> Sponsor Balance 10x</a></p>
-	</div>
-    <div class="col-md-10 col-md-offset-1 space">
-	  <h1>The story behind the mod</h1>
-      <p>When I was in middle school, I wanted to be able to make my own Minecraft modifications, namely, a Winnie-the-Pooh mod that recreated my very own Hundred Acre Woods. Video games are unique in the way in which they can be expanded - community modifications can provide gamers with increased challenges or exciting additions. At the time, I was learning to program in Python, but Minecraft modding required Java skills. In order to create a virtual Tigger for my own amusement, I needed to learn a new language and research how to use the custom code. The step up from creating simple arithmetic quizzes to rendering 3D models proved to be too much, and my experience fell flat. I moved on from Minecraft to other games, and, while I occasionally play in some ultra-modded worlds, I have never been motivated enough to finish that mod.</p>
-	  <p>One of the game franchises that I moved on to was the Civ series. I bought the highly anticipated Civ Beyond Earth (CBE), which was harshly criticized for having less content than expected. Although I enjoyed the game, I wondered why it was being criticized so harshly, so I bought its predecessor, Civ V. I was surprised at the amount of content in the older game, but even more amazed at the community. Numerous community creations could be found, such as guides explaining optimal strategies, maps detailing accurate portrayals of the earth, and mods which created total reworks of the game. One of the Civ V mods I most enjoyed playing with was JFD's Balance Mod, which counterintuitively, unbalanced the game hilariously. With CBE being a commercial disappointment and receiving less attention than its predecessor, creations for that game were on the low end. Some mods had hundreds of hours put into them and were distributed free of charge regardless, so I took some inspiration from Mr. JFD and decided to give back to the Civ community by publishing my own balance mod for CBE players.</p>
-	  <p>Looking at a modding tutorial for Civ V (no CBE guides could be found) and the source code of JFD's mod gave me the impression that my projects would be quite simple and easy to complete. All I would have to learn is how to use Firaxis’s Modbuddy, SQL, XML, query lookup, and a few other tools. If you’re overwhelmed by this alphabet of tools, that’s okay. So was I.</p>
-	  <p>The notion that this would be weekend project was simply incorrect. I had to figure out the differences between what the Civ V guide suggested and how the CBE database was implemented. In addition, description icons were displayed differently, making the data lookup difficult. Doing this stuff would have been easier in languages I was familiar with, such as Java or Python (or Chinese), but I had to learn new syntax for the alphabet of tools. I found the lookups themselves easier, but tedious to go through, as I had to search through hundreds of tags to find only a few values. The work all culminated in a few SQL and XML files with a good amount of code.</p>
-	  <p>Two months after the start of my endeavour, I had taught myself how to build a CBE mod from scratch. Even though I had always intended on publishing my mods on the Steam platform, I did not expect much reaction to an inexperienced modder’s two gimmicky mods. But I started receiving lots of feedback from the community, with positive and negative opinions alike. I was extremely proud to see that others appreciated my work or were willing to respond to it, and seeing positive comments made me extremely happy. For those 1300+ gamers who subscribe to my mods, I can only hope that they get the same enjoyment that I had when I played JFD’s mod and maybe that they too teach themselves how to mod.</p>
-    </div>
-  </div>
-</section>
-<!-- description text section --> 
+            </div>
+            <div class="col-md-10 col-md-offset-1 space">
+                <h1>The story behind the mod</h1>
+                <p>When I was in middle school, I wanted to be able to make my own Minecraft modifications, namely, a Winnie-the-Pooh mod that recreated my very own Hundred Acre Woods. Video games are unique in the way in which they can be expanded - community
+                    modifications can provide gamers with increased challenges or exciting additions. At the time, I was learning to program in Python, but Minecraft modding required Java skills. In order to create a virtual Tigger for my own amusement,
+                    I needed to learn a new language and research how to use the custom code. The step up from creating simple arithmetic quizzes to rendering 3D models proved to be too much, and my experience fell flat. I moved on from Minecraft to other
+                    games, and, while I occasionally play in some ultra-modded worlds, I have never been motivated enough to finish that mod.</p>
+                <p>One of the game franchises that I moved on to was the Civ series. I bought the highly anticipated Civ Beyond Earth (CBE), which was harshly criticized for having less content than expected. Although I enjoyed the game, I wondered why it
+                    was being criticized so harshly, so I bought its predecessor, Civ V. I was surprised at the amount of content in the older game, but even more amazed at the community. Numerous community creations could be found, such as guides explaining
+                    optimal strategies, maps detailing accurate portrayals of the earth, and mods which created total reworks of the game. One of the Civ V mods I most enjoyed playing with was JFD's Balance Mod, which counterintuitively, unbalanced the
+                    game hilariously. With CBE being a commercial disappointment and receiving less attention than its predecessor, creations for that game were on the low end. Some mods had hundreds of hours put into them and were distributed free of
+                    charge regardless, so I took some inspiration from Mr. JFD and decided to give back to the Civ community by publishing my own balance mod for CBE players.</p>
+                <p>Looking at a modding tutorial for Civ V (no CBE guides could be found) and the source code of JFD's mod gave me the impression that my projects would be quite simple and easy to complete. All I would have to learn is how to use Firaxis’s
+                    Modbuddy, SQL, XML, query lookup, and a few other tools. If you’re overwhelmed by this alphabet of tools, that’s okay. So was I.</p>
+                <p>The notion that this would be weekend project was simply incorrect. I had to figure out the differences between what the Civ V guide suggested and how the CBE database was implemented. In addition, description icons were displayed differently,
+                    making the data lookup difficult. Doing this stuff would have been easier in languages I was familiar with, such as Java or Python (or Chinese), but I had to learn new syntax for the alphabet of tools. I found the lookups themselves
+                    easier, but tedious to go through, as I had to search through hundreds of tags to find only a few values. The work all culminated in a few SQL and XML files with a good amount of code.</p>
+                <p>Two months after the start of my endeavour, I had taught myself how to build a CBE mod from scratch. Even though I had always intended on publishing my mods on the Steam platform, I did not expect much reaction to an inexperienced modder’s
+                    two gimmicky mods. But I started receiving lots of feedback from the community, with positive and negative opinions alike. I was extremely proud to see that others appreciated my work or were willing to respond to it, and seeing positive
+                    comments made me extremely happy. For those 1300+ gamers who subscribe to my mods, I can only hope that they get the same enjoyment that I had when I played JFD’s mod and maybe that they too teach themselves how to mod.</p>
+            </div>
+        </div>
+    </section>
+    <!-- description text section -->
 
 
-<!-- footer -->
+    <!-- footer -->
 
-<footer class="section footer">
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="col-md-12">
-        <p>
-        <ul class="footer-share">
-          <li><a href="https://www.facebook.com/caopwn"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/andrew-wan/"><i class="fa fa-linkedin"></i></a></li>
-		  <li><a href="https://github.com/buzzonetwo"><i class="fa fa-github"></i></a></li>
-        </ul>
-        </p>
-        <p>© 2015 All rights reserved. All Rights Reserved<br>
-          Made by <a href="http://kamalchaneman.com/">Designstub</a> with major revisions by me.</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- footer --> 
+    <footer class="section footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="col-md-12">
+                    <p>
+                        <ul class="footer-share">
+                            <li><a href="https://www.facebook.com/caopwn"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/andrew-wan/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/buzzonetwo"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </p>
+                    <p>© 2015 All rights reserved. All Rights Reserved<br> Made by <a href="http://kamalchaneman.com/">Designstub</a> with major revisions by me.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
 
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script src="js/retina.min.js"></script> 
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script>
+    <!-- JS FILES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
