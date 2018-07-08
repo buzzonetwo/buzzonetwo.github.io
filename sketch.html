@@ -1,0 +1,144 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        };
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "flex";
+    }
+</script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew Wan | Software Developer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <section class="innerbanner" role="banner">
+        <header id="header">
+            <!-- navigation section  -->
+            <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" alt="Mafolio"></a>
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">My Projects</a></li>
+                        <li><a href="resume.html">My Experience</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+            <!-- navigation section  -->
+        </header>
+
+        <!-- banner text -->
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="innerbanner-text text-center">
+                    <p style="line-height: 40px;">JOGL Sketcher</p>
+                    <!-- banner text -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- header section -->
+    <!-- description text section -->
+    <section id="inner-description" class="section inner-description">
+        <div class="container">
+
+            <div class="w3-content w3-display-container" style="max-width:900px;">
+                <!-- Slideshow -->
+                <div class="w3-display-container mySlides w3-animate-opacity" style="display: flex; justify-content: center;">
+                    <img src="images/project-logos/sketcher.png" style="width:100%; border-radius: 0; height: 100%; border: 2px solid black;">
+                </div>
+                <div class="w3-display-container mySlides w3-animate-opacity" style="display: none; justify-content: center;">
+                    <img src="images/sketcher/flower.png" style="width:100%; border-radius: 0; height: 100%; border: 2px solid black;">
+                </div>
+                <button class="w3-button w3-light-grey noselection w3-display-left" onclick="plusDivs(-1)">❮</button>
+                <button class="w3-button w3-light-grey noselection w3-display-right" onclick="plusDivs(+1)">❯</button>
+            </div>
+
+            <div class="col-md-10 col-md-offset-1 space">
+                <p>I created a simple line sketcher simulator in spring 2017 as part of my final project in a computer science class at Head-Royce School. It utilizes the Java Swing library in order to offer some customization options, while the JOGL is primarily used to handle the canvas drawing. I had never used JOGL before so it was an interesting challenge to learn how to properly utilize its features.</p>
+                <p>Link: <a style="color: red" href="https://github.com/pioneers/PieCentral/tree/master/shepherd" target="_blank">PieCentral Github</a> - I worked with the server-related Python files and HTML/Jinja templates</p>
+                <p>More about PiE: <a style="color: red" href="https://pioneers.berkeley.edu/" target="_blank">PiE Homepage</a></p>
+
+
+            </div>
+            <div class="col-md-10 col-md-offset-1">
+                <h1>Sketcher Mechanics</h1>
+                <p>WASD to move the pointer</p>
+                <p>QE to spin</p>
+                <p>Hold H to erase</p>
+                <p>R to reset<br></p>
+                <p>Pointer thickness and color and background color can be changed with the buttons at the bottom. Note: the button outlines will also spin, but where they are supposed to be can still be clicked.</p>
+                <p>Help screen shows on startup and can be accessed again by clicking the bottom left question mark.</p>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- description text section -->
+
+
+    <!-- footer -->
+
+    <footer class="section footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="col-md-12">
+                    <p>
+                        <ul class="footer-share">
+                            <li><a href="https://www.facebook.com/caopwn"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/andrew-wan/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/buzzonetwo"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </p>
+                    <p>© 2015 All rights reserved. All Rights Reserved<br> Made by <a href="http://kamalchaneman.com/">Designstub</a> with major revisions by me.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- JS FILES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
