@@ -26,7 +26,7 @@ var minimumTimeBonus = 2;
 var cherriesPerStage = 3;
 
 GamePlay.preload = function() {
-    this.addSpriteSheet('tiles', 'assets/img/tileset.png', tileWidth, tileWidth);
+    this.addSpriteSheet('tiles', 'game/assets/img/tileset.png', tileWidth, tileWidth);
 }
 
 GamePlay.randomInt = function(max) {
